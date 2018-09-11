@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+body{
+	background-color: white;
+	margin: 0px;
+}
+
+/*Alle foto's apart gelinkt*/
+.picture1{
+    background-image: url(../images/binary.jpg);
+}
+
+.picture2{
+    background-image: url(../images/sgml.jpg);
+}
+
+.picture3{
+    background-image: url(../images/timbl.jpg);
+}
+
+.picture4{
+    background-image: url(../images/oldpc.jpg);
+}
+
+.picture5{
+    background-image: url(../images/html.jpg);
+}
+
+.picture6{
+    background-image: url(../images/internet.jpg);
+}
+
+.picture7{
+    background-image: url(../images/css.jpg);
+}
+
+.picture8{
+    background-image: url(../images/iphone.jpg);
+}
+
+@media only screen and (min-width : 0px){
+/*Haalt de br tag weg bij mobiele versies*/
+.whitespace br {
+	display: none;
+}
+
+/*De "navigatiebar" die niet echt dient voor navigatie */
+.nav{
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+}
+
+/*De titel van de tijdlijn*/
+.timelinetitle{
+	align-self: center;
+	color: white;
+	font-family: Abril Fatface, roboto, arial;
+	font-size: 30px;
+	
+}
+
+/*De afbeelding*/
+.picture{
+	height: 100px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	/*zodat de foto meeschaalt*/
+	flex-shrink: 1; 
+	margin: 0;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+	opacity: 0.5;
+}
+
+/*De titel van de tekst*/
+.title{
+	font-family: Abril fatface, roboto, arial;
+	font-size: 30px;
+}
+
+/*De datumtekst*/
+.date{
+	font-family: roboto bold, arial;
+	font-size: 18px;
+}
+
+.text, .textp{
+	background-color: white;
+	/*Hoogte van de div!!!*/
+	height: 350px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	/*lettertype jaartallen en informatietekst*/
+	font-family: roboto condensed, arial;
+	font-weight: 200;
+	font-size: 20px;
+}
+}
+
+@media only screen and (min-width : 360px){
+.nav{
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+}
+
+.timelinetitle{
+	align-self: center;
+	color: white;
+	font-family: Abril Fatface, roboto, arial;
+	font-size: 26px;
+}
+
+.whitespace br {
+	display: none;
+}
+
+.picture{
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	/*zodat de foto meeschaalt*/
+	flex-shrink: 1; 
+	margin: 0;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+	opacity: 0.5;
+}
+
+/*De titel van de tekst*/
+.title{
+	font-family: Abril fatface, roboto, arial;
+	font-size: 26px;
+}
+
+.text, .textp{
+	background-color: white;
+	/*Hoogte van de div!!!*/
+	height: 300px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	
+	/*lettertype jaartallen en informatietekst*/
+	font-family: roboto condensed, arial;
+	font-weight: 200;
+	font-size: 20px;
+}	
+}
+
+@media only screen and (min-width : 768px){	
+.nav{
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+}
+
+.timelinetitle{
+	font-size: 20px;
+	font-family: Abril Fatface, roboto, arial;
+}
+
+.picture{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 300px;
+	width: 70%;
+	opacity: 0.5;
+}
+
+.whitespace br {
+	display: inline;
+}
+
+div.text p{
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 60%;
+	
+	/*lettertype jaartallen en informatietekst*/
+	font-family: roboto condensed, arial;
+	font-weight: 200;
+	font-size: 18px;
+}
+
+.title{
+	font-family: Abril fatface, roboto, arial;
+	font-size: 20px;
+}
+}
+
+
+
+@media only screen and (min-width : 1366px){
+.nav{
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+}
+
+.timelinetitle{
+	align-self: center;
+	color: white;
+	font-family: Abril fatface, roboto, arial;
+	font-size: 20px;
+}
+
+.picture{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 450px;
+	width: 70%;
+	opacity: 0.5;
+}
+
+div.text p{
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 60%;
+	
+	/*lettertype jaartallen en informatietekst*/
+	font-family: roboto condensed, arial;
+	font-weight: 200;
+	font-size: 20px;
+}
+
+.title{
+	font-family: Abril fatface, roboto, arial;
+	font-size: 16px;
+}
+}
+
+
+@media only screen and (min-width : 1920px){
+.nav{
+	background-color: black;
+	display: flex;
+	flex-flow: column;
+}
+
+.timelinetitle{
+	font-size: 20px;
+	font-family: Abril fatface, roboto, arial;
+}
+
+.title{
+	font-family: Abril fatface, roboto, arial;
+	font-size: 20px;
+}
+
+.picture{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	height: 500px;
+	width: 65%;
+	opacity: 0.5;
+}
+
+div.text p{
+	display: flex;
+	flex-direction: column;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 60%;
+	
+	/*lettertype jaartallen en informatietekst*/
+	font-family: roboto condensed, arial;
+	font-weight: 200;
+	font-size: 16px;
+}
+}
